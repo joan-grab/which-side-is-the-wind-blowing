@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    max-width: fit-content;
+    margin: auto;
+}
+
+.windArrow {
+    width: 200px;
+    display: none;
+}

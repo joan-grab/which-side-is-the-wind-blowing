@@ -4,11 +4,78 @@
 }
 
 .home {
-    max-width: fit-content;
+    max-width: 450px;
     margin: auto;
 }
 
+.info {
+    border-radius: 30px;
+    padding: 30px
+}
+
+.nav-pills > li > button.active {
+    background-color: #198754 !important;
+    border: 2px groove white !important;
+    font-weight: bold;
+}
+
+.nav-pills > li > button {
+    color: white;
+}
+
+.city {
+    height: 30px;
+}
+
+.windArrowBox {
+    height: 200px;
+}
+
+.rose {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    position: relative;
+}
+
+.n, .e, .s, .w {
+    position: absolute;
+}
+
+.n {
+    right: 50%;
+    transform: translate(50%, 0%);
+    -webkit-transform: translate(50%, 0%);
+}
+
+.e {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.s {
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, -100%);
+    -webkit-transform: translate(50%, -100%)
+}
+
+.w {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
 .windArrow {
-    width: 200px;
+    width: 100px;
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.windArrowForecast {
     display: none;
 }

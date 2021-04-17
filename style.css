@@ -4,13 +4,23 @@
 }
 
 .home {
-    max-width: fit-content;
+    max-width: 450px;
     margin: auto;
 }
 
 .info {
     border-radius: 30px;
     padding: 30px
+}
+
+.nav-pills > li > button.active {
+    background-color: #198754 !important;
+    border: 2px groove white !important;
+    font-weight: bold;
+}
+
+.nav-pills > li > button {
+    color: white;
 }
 
 .city {
@@ -64,4 +74,8 @@
     position: absolute;
     top: 25px;
     right: 25px;
+}
+
+.windArrowForecast {
+    display: none;
 }

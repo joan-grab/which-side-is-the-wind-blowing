@@ -22,10 +22,11 @@ function catchTheWind(lat, long) {
         
         city.innerHTML = cityValue;
         desc.innerHTML = descValue;
-        temp.innerHTML = tempValue;
-        windSpeed.innerHTML = windSpeedValue;
-        windDirection.innerHTML = windDirectionValue;
+        temp.innerHTML = tempValue+' °C';
+        windSpeed.innerHTML = windSpeedValue+' m/s';
+        windDirection.innerHTML = windDirectionValue+' °';
         windArrow.style.transform = 'rotate('+windDirectionValue+'deg)';
+        windArrow.style.webkitTransform = 'rotate('+windDirectionValue+'deg)';
         windArrow.style.display = 'block';
     })
 .catch(err => console.error('Chosen latitude and longitude is not available'))

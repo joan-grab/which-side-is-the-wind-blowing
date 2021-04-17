@@ -16,31 +16,48 @@
 
     </head>
 
-    <body class="bg-dark text-light">
+    <body class="">
 
         <div class="home mt-5">
             <section class="container">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control inputValue" placeholder="Enter a city:" aria-label="Enter a city:" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary button" type="button" id="button-addon2">submit</button>
+                    <button class="btn btn-secondary button" type="button" id="button-addon2">submit</button>
                 </div>
             </section>
-            <section class="container">
+            <section class="info container bg-success text-light">
                 <div class="row justify-content-center">
-                    <h3 class="city"></h3>
+                    <h3 class="city text-center"></h3>
+                    <hr>
                 </div>
-                <div class="row justify-content-center">
-                    <p>Weather description: <span class="description"></span></p>
+                <div class="row windArrowBox">
+                    <h4 class="title text-center">Which side wind is blowing?</h4>
+                    <div class="row justify-content-center mb-2">
+                        <div class="rose bg-light text-black-50">
+                            <p class="n">N</p>
+                            <p class="e">E</p>
+                            <p class="s">S</p>
+                            <p class="w">W</p>
+                            <img class="windArrow" src="./windArrow.png">
+                        </div> 
+                    </div>          
+                    <hr>         
                 </div>
-                <div class="row justify-content-center">
-                    <p>Temperature: <span class="temp"></span> °C</p>                    
+                <div class="row">
+                    <p class="col-6 mt-2">Weather description:</p><span class="description col-6 text-end mt-2"></span>
+                    <hr>
+                </div>
+                <div class="row">
+                    <p class="col-6">Temperature:</p><span class="temp col-6 text-end"></span>
+                    <hr>                    
                 </div>               
-                <div class="row justify-content-center">
-                    <p>Wind speed: <span class="windSpeed"></span> m/s</p>
+                <div class="row">
+                    <p class="col-6">Wind speed:</p><span class="windSpeed col-6 text-end"></span>
+                    <hr>
                 </div>
-                <div class="row justify-content-center">
-                    <hp>Wind direction: <span class="windDirection"></span> degrees</p>
-                    <img class="windArrow" src="./windArrow.png">
+                <div class="row">
+                    <p class="col-6">Wind direction:</p><span class="windDirection col-6 text-end"></span>
+                    <hr>
                 </div>
             </section>
         </div>

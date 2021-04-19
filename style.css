@@ -13,6 +13,10 @@
     padding: 30px
 }
 
+.nav {
+    padding-right: 0;
+}
+
 .nav-pills > li > button.active {
     background-color: #198754 !important;
     border: 2px groove white !important;
@@ -28,7 +32,12 @@
 }
 
 .windArrowBox {
-    height: 200px;
+    height: fit-content;;
+}
+
+.windArrowBox h4 {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .rose {
@@ -36,6 +45,7 @@
     width: 150px;
     border-radius: 75px;
     position: relative;
+    margin-left: auto;
 }
 
 .n, .e, .s, .w {
@@ -65,7 +75,7 @@
 .w {
     top: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translate(50%, -50%);
 }
 
 .windArrow {
@@ -77,5 +87,9 @@
 }
 
 .windArrowForecast {
+    width: 100px;
     display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }
